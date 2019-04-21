@@ -7,9 +7,9 @@ Here I choose the delimiter to be **'/'** and not **'.'** as document can have a
 Below exmaples are based on the sample provided below
 
 To extract spouse firstName
-'''
+```
 xpath_json.extract('spouse/firstName', input) #Extracts Spouse firstName
-'''
+```
 ### Sample Data
 ```
 input = 
