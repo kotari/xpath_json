@@ -3,7 +3,7 @@
 Simplify extracting data from JSON using xpath like approach
 Here I chose the delimiter to be **'/'** and not **'.'** as document can have a '.' in the key attribute 
 ### Sample Data
-`{
+```{
     "firstName": "John",
     "lastName": "Smith",
     "age": 42,
@@ -44,4 +44,4 @@ Here I chose the delimiter to be **'/'** and not **'.'** as document can have a 
         {"firstName": "Roger", "lastName": "Craig", "age": 68},
         {"firstName": "Jane", "lastName": "Murphy", "age": 47}
     ]
-}`
+}```
