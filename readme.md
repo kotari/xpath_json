@@ -1,9 +1,18 @@
 # Describe xpath_json project and how to use it to extract values from json
 ## Goal
-Simplify extracting data from JSON using xpath like approach
-Here I chose the delimiter to be **'/'** and not **'.'** as document can have a '.' in the key attribute 
+Simplify extracting data from JSON using xpath like approach.
+
+Here I choose the delimiter to be **'/'** and not **'.'** as document can have a **'.'** in the key attribute 
+## How to extract data
+Below exmaples are based on the sample provided below
+
+To extract spouse firstName
+'''
+xpath_json.extract('spouse/firstName', input) #Extracts Spouse firstName
+'''
 ### Sample Data
 ```
+input = 
 {
     "firstName": "John",
     "lastName": "Smith",
