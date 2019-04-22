@@ -1,11 +1,14 @@
-# Describe xpath_json project and how to use it to extract values from json
+# Extract data from JSON using Xpath approach
+
+## Background
+In python to extract a value from JSON structure we have to write obj['key'] or obj[index] and it gets even more convoluted when we try to extract
+a value based on certain conditions 
+
 ## Goal
-Simplify extracting data from JSON using xpath like approach.
+This library tries to simplify extracting data from JSON using xpath like approach which are pretty much 1 liners
 
-Here I choose the delimiter to be **'/'** and not **'.'** as document can have a **'.'** in the key attribute 
-## How to extract data
-Below exmaples are based on the sample provided below
 
+## How does it work
 ```
 xpath_json.extract('spouse/firstName', input) #Extract Spouse firstName
 xpath_json.extract('addresses/#', input) #Extract number of addresses
