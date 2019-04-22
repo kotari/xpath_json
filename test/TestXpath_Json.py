@@ -79,7 +79,7 @@ class TestXpath_Json(unittest.TestCase):
         self.assertEqual(fav_movie, 'Mr & Mrs Smith')
 
     def test_friends_age_gte_47(self):
-        friends = xpath_json.extract('friends/#[age>=47]/#', self.input)
+        friends = xpath_json.extract('friends/#[age >= 47]/#', self.input)
         self.assertEqual(friends, 2)
 
     def test_friends_age_lt_47(self):

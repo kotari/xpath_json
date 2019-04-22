@@ -6,9 +6,16 @@ Here I choose the delimiter to be **'/'** and not **'.'** as document can have a
 ## How to extract data
 Below exmaples are based on the sample provided below
 
-To extract spouse firstName
 ```
-xpath_json.extract('spouse/firstName', input) #Extracts Spouse firstName
+xpath_json.extract('spouse/firstName', input) #Extract Spouse firstName
+xpath_json.extract('addresses/#', input) #Extract number of addresses
+xpath_json.extract('addresses/#[description==home]', input) #Extract home address
+xpath_json.extract('addresses/#[postalCode==30305]/#', input) #Extract addresses based on postalCode
+xpath_json.extract('phoneNumbers/#[description==mobile]/0/number', input) #Extract first mobile number
+xpath_json.extract('fav.movie', input) #Extract fav.movie (key has a .)
+xpath_json.extract('friends/#[age >= 47]/#', input) #Extract based on a condition and count number of friends found
+xpath_json.extract('friends/#[age<47]/#', input) #Extract based on a condition (notice no spaces)
+xpath_json.extract('friends/#/firstName', input) # Extract a list of friends first names
 ```
 ### Sample Data
 ```
